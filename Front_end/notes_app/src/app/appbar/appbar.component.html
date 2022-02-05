@@ -1,12 +1,12 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
 <div class="appbar flex-container" fxLayout="row" fxLayoutAlign="space-between center">
-    <mat-icon id="drawer" (click)="drawer.toggle()">menu</mat-icon>
-    <p id="app-name">Notes</p>
+    <mat-icon id="drawer" (click)="drawer.toggle()" matTooltip="Drawer">menu</mat-icon>
+    <p id="app-name" matTooltip="App name">Notes</p>
     <div class="options" fxLayout="row" fxLayoutAlign="none center">
-        <mat-icon>refresh</mat-icon>
-        <mat-icon [matMenuTriggerFor]="menu">settings</mat-icon>
-        <img id="icon" src="../../assets/man.png" />
+        <mat-icon matTooltip="Refresh">refresh</mat-icon>
+        <mat-icon matTooltip="Settings" [matMenuTriggerFor]="menu">settings</mat-icon>
+        <img id="icon" src="../../assets/man.png" matTooltip="Avatar"/>
     </div>
 </div>
 

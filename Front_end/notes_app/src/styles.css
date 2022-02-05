@@ -1,8 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files #202124*/
 body {
+  /* background-color: #010305; */
+  background-color: transparent;
   margin: 0;
-  padding: 0;
-  font-family: ubuntu;
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: white;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

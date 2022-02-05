@@ -10,11 +10,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatCardModule } from '@angular/material/card';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @NgModule({
   declarations: [AppComponent, AppbarComponent, ListViewComponent],
-  imports: [BrowserModule, AppRoutingModule, MatIconModule, FlexLayoutModule, MatSidenavModule, MatMenuModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, MatIconModule, 
+    FlexLayoutModule, MatSidenavModule, MatMenuModule,
+    BrowserAnimationsModule, MatTooltipModule, MatCardModule,
+    MatBadgeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -3,6 +3,7 @@
   height: 60px;
   color: white;
   padding: 20px;
+  user-select: none;
 }
 
 #app-name {
@@ -35,8 +36,7 @@ mat-icon {
 mat-icon:hover {
   background-color: rgba(232, 234, 237, 0.08);
   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  padding: 12px;
-  animation-direction: reverse
+  padding: 6px;
 }
 
 #icon {

@@ -1,5 +1,15 @@
-<ul>
-    <li *ngFor="let item of title">
-        {{item}}
-    </li>
-</ul>
+<div class="container">
+  <div *ngFor="let item of data; let i = index;">
+    <mat-card (click)="openEditor(i)" matBadge="656" matBadgePosition="before" [matBadgeHidden]="true" matBadgeColor="warn"
+      (mouseover)="isChangedBlock[i] = false"
+      (mouseout)="isChangedBlock[i] = true">
+      <mat-card-title>{{ item.name }}</mat-card-title>
+      <mat-card-content>{{ item.desc }}</mat-card-content>
+      <mat-card-footer fxLayoutAlign="space-evenly center">
+          <mat-icon enabled="true">label_important_outline</mat-icon>
+          <mat-icon>delete_outline</mat-icon>
+          <mat-icon>more_vert</mat-icon>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>
