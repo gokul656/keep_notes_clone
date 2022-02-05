@@ -10,10 +10,10 @@ mat-card{
     max-width: 250px;
     min-width: 250px;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: white;
+    background-color: transparent;
+    /* color: white; */
     border-radius: 10px;
-    border: 1px solid #ffffff;
+    border: 1px solid #5f6368;
     cursor: pointer;
     user-select: none;
     box-shadow: 5px 10px #888888;
